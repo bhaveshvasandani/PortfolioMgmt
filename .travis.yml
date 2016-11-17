@@ -17,7 +17,6 @@ notifications:
   slack:
     template:
       - "%{repository}, branch %{branch}, by %{author}) : Commit %{commit_subject}, %{commit_message} "
-	  - "Result of build: %{result}"
-      - "Build details: %{build_url}"
+      - "Result of build: %{result}; Build details: %{build_url}"
     rooms:
       - nyu-devops:PjFNnnnZYQ2rIfnCiIL0RI46#general
